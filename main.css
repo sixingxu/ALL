@@ -14,3 +14,43 @@ body{
 .commercial{
 	padding-left:5%;
 }
+
+.container{
+	position:relative;
+}
+
+.notice{
+	position:absolute;
+	width:85%;
+	display:inline-block;
+	background-color:white;
+	z-index: 1;
+	top:30;
+	left:30;
+	border: 3px solid black;
+	box-shadow:5px 5px;
+
+}
+
+#large{
+	font-family: "Helvetica";
+	font-weight:bold;
+	padding:10 25 10 25;
+	font-size: 1.5em;
+}
+
+#button{
+	position:absolute;
+	right:0;
+	top:0;
+	padding:10;
+	font-family: "Helvetica";
+	font-weight:bold;
+	font-size:1.5em;
+}
+
+#button:hover{
+	color:grey;
+	cursor:pointer;
+	z-index: 2;
+}

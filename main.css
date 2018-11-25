@@ -20,16 +20,23 @@ body{
 }
 
 .notice{
-	position:absolute;
 	width:85%;
 	display:inline-block;
 	background-color:white;
 	z-index: 1;
-	top:30;
-	left:30;
+	margin-top:30;
+	margin-left:30;
 	border: 3px solid black;
 	box-shadow:5px 5px;
 
+}
+
+.notice:hover{
+	cursor:all-scroll;
+}
+
+.mobile{
+	display:none;
 }
 
 #large{
@@ -53,4 +60,15 @@ body{
 	color:grey;
 	cursor:pointer;
 	z-index: 2;
+}
+
+@media only screen and (max-width: 550px) {
+	.commercial{
+	display:none;
+	}
+
+	.mobile{
+	display:inline-block;
+
+	}
 }

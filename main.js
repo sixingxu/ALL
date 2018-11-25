@@ -18,7 +18,7 @@ $("#button").click(function() {
 //         	console.log("<500");
 //             $(".commercial").remove();
 //         }
-});
+// });
 
  });
 

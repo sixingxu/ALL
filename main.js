@@ -13,11 +13,11 @@ $("#button").click(function() {
   $( ".notice" ).hide();
 });
 
-$(window).resize(function(){
-        if(window.innerWidth < 500) {
-        	console.log("<500");
-            $(".commercial").remove();
-        }
+// $(window).resize(function(){
+//         if(window.innerWidth < 500) {
+//         	console.log("<500");
+//             $(".commercial").remove();
+//         }
 });
 
  });

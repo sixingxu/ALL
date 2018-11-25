@@ -80,8 +80,11 @@ body{
 	box-shadow:5px 5px;
 	}
 
+	#large{
+	font-size: 1em;
+}
+
 	.mobile{
 	display:inline-block;
-
 	}
 }

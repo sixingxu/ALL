@@ -112,6 +112,10 @@ body{
 	box-shadow:5px 5px;
 	}
 
+	#timer{
+	display:none;
+	}
+
 	#large{
 	padding:10 25 10 10;
 	font-size: 1.3em;

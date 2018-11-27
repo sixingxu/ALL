@@ -12,6 +12,7 @@ body{
 }
 
 .commercial{
+	padding-top: 5%;
 	padding-left:5%;
 }
 
@@ -21,7 +22,8 @@ body{
 
 .notice{
 	position:absolute;
-	width:85%;
+	position:fixed;
+	width:75%;
 	display:inline-block;
 	background-color:white;
 	z-index: 1;
@@ -29,11 +31,16 @@ body{
 	left:30;
 	border: 3px solid black;
 	box-shadow:5px 5px;
-
 }
 
 .notice:hover{
 	cursor:all-scroll;
+}
+
+#timer{
+	width:50%;
+	top:150;
+	left:40%;
 }
 
 .mobile{
@@ -47,7 +54,8 @@ body{
 	font-size: 1.5em;
 }
 
-#button{
+/*mobile notice*/
+#button1, #button2, #button3, #button0, #button00{
 	position:absolute;
 	right:0;
 	top:0;
@@ -57,13 +65,37 @@ body{
 	font-size:1.5em;
 }
 
-#button:hover{
+#button0:hover{
 	color:grey;
 	cursor:pointer;
 	z-index: 2;
 }
 
-@media only screen and (max-width: 550px) {
+#button00:hover{
+	color:grey;
+	cursor:pointer;
+	z-index: 2;
+}
+
+#button1:hover{
+	color:grey;
+	cursor:pointer;
+	z-index: 2;
+}
+
+#button2:hover{
+	color:grey;
+	cursor:pointer;
+	z-index: 2;
+}
+
+#button3:hover{
+	color:grey;
+	cursor:pointer;
+	z-index: 2;
+}
+
+@media only screen (orientation : portrait) and (max-width: 550px) {
 	.commercial{
 	display:none;
 	}
@@ -74,15 +106,15 @@ body{
 	display:inline-block;
 	background-color:white;
 	z-index: 1;
-	margin-top:10;
+	margin-top:30;
 	margin-left:10;
 	border: 3px solid black;
 	box-shadow:5px 5px;
 	}
 
 	#large{
-	padding:10;
-	font-size: 1em;
+	padding:10 25 10 10;
+	font-size: 1.3em;
 }
 
 	.mobile{

@@ -17,6 +17,10 @@ $("#button0").click(function() {
 });
 
 $("#button00").click(function() {
+  $( "#prc" ).hide();
+});
+
+$("#button000").click(function() {
   $( "#timer" ).hide();
 });
 

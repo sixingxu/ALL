@@ -11,6 +11,11 @@ body{
 	z-index: -999;
 }
 
+.header{
+	display:inline-block;
+	margin-left: 30px;
+}
+
 .commercial{
 	padding-top: 5%;
 	padding-left:5%;
@@ -27,7 +32,7 @@ body{
 	display:inline-block;
 	background-color:white;
 	z-index: 1;
-	top:30;
+	top:130;
 	left:30;
 	border: 3px solid black;
 	box-shadow:5px 5px;
@@ -39,8 +44,14 @@ body{
 
 #timer{
 	width:50%;
-	top:150;
+	top:100;
 	left:40%;
+}
+
+#prc{
+	width:70%;
+	top:170;
+	left:10%;
 }
 
 .mobile{
@@ -55,7 +66,7 @@ body{
 }
 
 /*mobile notice*/
-#button1, #button2, #button3, #button0, #button00{
+#button1, #button2, #button3, #button0, #button00, #button000{
 	position:absolute;
 	right:0;
 	top:0;
@@ -72,6 +83,12 @@ body{
 }
 
 #button00:hover{
+	color:grey;
+	cursor:pointer;
+	z-index: 2;
+}
+
+#button000:hover{
 	color:grey;
 	cursor:pointer;
 	z-index: 2;

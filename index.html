@@ -9,14 +9,45 @@
 <script src="js/p5.dom.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
 
 <script type="text/javascript" src="main.js"></script>
 
+<script>
+ var nextPages;
 
+
+$(document).ready(function() {
+
+nextPages = [
+  'commercial',
+  'gallery',
+  'care',
+  'stories',
+  'acrossthewall',
+  'contact',
+];
+
+
+$('.container').infiniteScroll({
+  path: function(){
+    return nextPages[ this.loadCount ];
+  },
+  append: '.post',
+  status: '.page-load-status',
+});
+ });
+
+
+
+
+
+</script>
 
 </head>
 
 <body>
+<div class="container">
 <div class="bg">
 <img src="img/blur_landscape.jpg" alt="bg img beautiful chinese landscape from google">
 </div>
@@ -61,7 +92,7 @@
 	</div>
 
 
-
+</div>
 </body>
 </html>
 

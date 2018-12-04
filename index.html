@@ -31,7 +31,7 @@ nextPages = [
 
 $('.container').infiniteScroll({
   path: function(){
-    return nextPages[ this.loadCount ];
+    return 'https://greatsouvenirs.cn/'+nextPages[ this.loadCount ];
   },
   append: '.post',
   status: '.page-load-status',

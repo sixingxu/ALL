@@ -11,6 +11,10 @@ var nextPages = [
 ];
 
 
+
+
+ $(document).ready(function() {
+  xw
 $('.container').infiniteScroll({
   path: function(){
     console.log(nextPages[ this.loadCount ]);
@@ -19,9 +23,6 @@ $('.container').infiniteScroll({
   append: '.post',
   status: '.page-load-status',
 });
-
-
- $(document).ready(function() {
 
 if(isMobile==false){
  if(window.innerWidth < 500) {

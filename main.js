@@ -13,6 +13,7 @@ var nextPages = [
 
 $('.container').infiniteScroll({
   path: function(){
+    console.log(nextPages[ this.loadCount ]);
     return 'https://greatsouvenirs.cn/'+ nextPages[ this.loadCount ];
   },
   append: '.post',

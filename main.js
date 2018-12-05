@@ -14,7 +14,6 @@ var nextPages = [
 
 
  $(document).ready(function() {
-  xw
 $('.container').infiniteScroll({
   path: function(){
     console.log(nextPages[ this.loadCount ]);

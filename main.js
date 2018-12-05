@@ -1,5 +1,25 @@
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
+
+var nextPages = [
+  'commercial',
+  'gallery',
+  'care',
+  'stories',
+  'acrossthewall',
+  'contact',
+];
+
+
+$('.container').infiniteScroll({
+  path: function(){
+    return 'https://greatsouvenirs.cn/'+ nextPages[ this.loadCount ];
+  },
+  append: '.post',
+  status: '.page-load-status',
+});
+
+
  $(document).ready(function() {
 
 if(isMobile==false){

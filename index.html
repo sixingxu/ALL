@@ -13,32 +13,11 @@
 
 <script type="text/javascript" src="main.js"></script>
 
-<script>
-
-var nextPages = [
-  'commercial',
-  'gallery',
-  'care',
-  'stories',
-  'acrossthewall',
-  'contact',
-];
-
-
-$('.container').infiniteScroll({
-  path: function(){
-    return 'https://greatsouvenirs.cn/'+ nextPages[ this.loadCount ];
-  },
-  append: '.post',
-  status: '.page-load-status',
-});
 
 
 
 
 
-
-</script>
 
 </head>
 

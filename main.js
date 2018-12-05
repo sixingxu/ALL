@@ -17,7 +17,8 @@ var nextPages = [
 $('.container').infiniteScroll({
   path: function(){
     console.log(nextPages[this.loadCount]);
-    return nextPages[this.loadCount];
+    var next = 'https://greatsouvenirs.cn/'+ nextPages[this.loadCount]
+    return next;
   },
   append: '.post',
   status: '.page-load-status',

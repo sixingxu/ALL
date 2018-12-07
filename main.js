@@ -1,73 +1,36 @@
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
-
-var nextPages = [
-  'commercial',
-  'gallery',
-  'care',
-  'stories',
-  'acrossthewall',
-  'contact',
-];
-
-
-
+var mainMargin;
 
  $(document).ready(function() {
-$('.container').infiniteScroll({
-  path: function(){
-    console.log(nextPages[this.loadCount]);
-    var next = 'https://greatsouvenirs.cn/'+ nextPages[this.loadCount]
-    return next;
-  },
-  append: '.post',
-  status: '.page-load-status',
-});
+mainMargin = $('.notice').height();
+$(".main-container").css({"margin": mainMargin + " auto"});
 
 if(isMobile==false){
  if(window.innerWidth < 500) {
-            $(".commercial").remove();
+            //$(".video-wrapper").remove();
         }
+    }else{
+          $(".video-wrapper").remove();
     }
 
- $( function() {
-    $( ".notice" ).draggable();
-  } );
 
-$("#button0").click(function() {
-  $( "#main" ).hide();
-});
-
-$("#button00").click(function() {
-  $( "#prc" ).hide();
-});
-
-$("#button000").click(function() {
-  $( "#timer" ).hide();
-});
-
-$("#button1").click(function() {
-  $( "#mobile1" ).hide();
-});
-
-$("#button2").click(function() {
-  $( "#mobile2" ).hide();
-});
-
-$("#button3").click(function() {
-  $( "#mobile3" ).hide();
-});
 
 countdownTimer();
 
  });
 
 
+$(window).resize(function(){
+mainMargin = $('.notice').height();
+$(".main-container").css({"margin": mainMargin + " auto"});
+
+})
 
 
 function countdownTimer(){
  	// Set the date we're counting down to
-var countDownDate = new Date("Nov 27, 2019 15:37:25").getTime();
+var countDownDate = new Date("Sep 30, 2019 22:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

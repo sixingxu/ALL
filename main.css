@@ -11,48 +11,56 @@ body{
 	z-index: -999;
 }
 
+#mobile-bg{
+	width:100%;
+}
+
+.notice-container{
+	overflow:hidden;
+}
+
+
 .header{
-	display:inline-block;
 	margin-left: 30px;
 }
 
-.commercial{
-	padding-top: 5%;
-	padding-left:5%;
+.video-wrapper{
+   		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		max-width:80%;
+		left:50%;
 }
 
-.container{
-	position:relative;
+.video-wrapper iframe{
+  	   position: absolute;
+		top: -10%;
+		transform: translateX(-50%);
+		width: 100%;
+		height: 100%;
+		padding:0;
 }
 
 .notice{
-	position:absolute;
 	position:fixed;
-	width:75%;
+	width:99%;
+	width:auto;
 	display:inline-block;
 	background-color:white;
-	z-index: 1;
-	top:130;
-	left:30;
 	border: 3px solid black;
 	box-shadow:5px 5px;
+	z-index:999;
+}
+
+.timer{
+	width:40%;
+	bottom:10%;
+	right:5%;
 }
 
 .notice:hover{
 	cursor:all-scroll;
 }
 
-#timer{
-	width:50%;
-	top:100;
-	left:40%;
-}
-
-#prc{
-	width:70%;
-	top:170;
-	left:10%;
-}
 
 .mobile{
 	display:none;
@@ -61,60 +69,46 @@ body{
 #large{
 	font-family: "Helvetica";
 	font-weight:bold;
-	padding:10 25 10 25;
-	font-size: 1.5em;
+	margin:10 20 10 15;
+	font-size: 1.1em;
 }
 
 /*mobile notice*/
-#button1, #button2, #button3, #button0, #button00, #button000{
+#button{
 	position:absolute;
 	right:0;
 	top:0;
 	padding:10;
 	font-family: "Helvetica";
 	font-weight:bold;
-	font-size:1.5em;
+	font-size:1.3em;
 }
 
-#button0:hover{
+#button:hover{
 	color:grey;
 	cursor:pointer;
 	z-index: 2;
 }
 
-#button00:hover{
-	color:grey;
-	cursor:pointer;
-	z-index: 2;
-}
 
-#button000:hover{
-	color:grey;
-	cursor:pointer;
-	z-index: 2;
-}
 
-#button1:hover{
-	color:grey;
-	cursor:pointer;
-	z-index: 2;
-}
-
-#button2:hover{
-	color:grey;
-	cursor:pointer;
-	z-index: 2;
-}
-
-#button3:hover{
-	color:grey;
-	cursor:pointer;
-	z-index: 2;
-}
 
 @media (orientation : portrait) and (max-width: 550px) {
-	.commercial{
+
+	#mobile-bg{
+	height: 100%;
+	width:auto;
+	}
+	.video-wrapper{
 	display:none;
+	}
+
+	.notice-container{
+		position:relative;
+	}
+
+	.main-container{
+		display:none;
 	}
 
 	.notice{
@@ -123,13 +117,16 @@ body{
 	display:inline-block;
 	background-color:white;
 	z-index: 1;
-	margin-top:30;
-	margin-left:5;
+	top:30;
+	margin-left: auto; 
+ 	margin-right: auto; 
 	border: 3px solid black;
 	box-shadow:5px 5px;
+	left: 50%;
+	transform: translateX(-50%);
 	}
 
-	#timer{
+	.timer{
 	display:none;
 	}
 
@@ -139,6 +136,15 @@ body{
 }
 
 	.mobile{
+	position:relative;
+	width:85%;
 	display:inline-block;
+	background-color:white;
+	z-index: 1;
+	margin-top: 15px;
+	border: 3px solid black;
+	box-shadow:5px 5px;
+	left: 50%;
+	transform: translateX(-50%);
 	}
 }

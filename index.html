@@ -9,65 +9,47 @@
 <script src="js/p5.dom.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
-
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script type="text/javascript" src="main.js"></script>
-
-
-
-
-
-
-
 </head>
 
 <body>
-<div class="container">
+
 <div class="bg">
-<img src="img/blur_landscape.jpg" alt="bg img beautiful chinese landscape from google">
+<img id="mobile-bg"src="img/blur_landscape.jpg" alt="bg img beautiful chinese landscape from google">
 </div>
 
+<div class="notice-container">
+
+<div class="notice" id="main">
+<div id="button">X</div>
+<div id="large">As of Nov 18, 2017, this site is no longer updated. Our team at <i>Zhongguo Souvenirs</i> would like to thank you for your support throughout the journey. We've decided to permenantly shut down the site on Oct 1st, 2019, 10:00AM (UTC+8), in celebration of People's Republic of China's 70th birthday. In the meantime, you are still welcome to browse our archive. </br></div>
+</div>
+
+<div class="notice mobile" id="mobile1">
+<div id="button">X</div>
+<div id="large">The current development of the site is not adapted for mobile. Please view it on a PC or tablet. </div>
+</div>
+
+</div>
+
+<div class="main-container">
 <div class="header">
 <img src="img/header-eng.png" width="400px">
 </div>
 
-<div class="vid-container">
-<div class="commercial"><iframe width="80%" height="80%" src="https://www.youtube.com/embed/FQMbXvn2RNI?autoplay=1&loop=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+<div class="video-wrapper">
+<iframe src="https://player.vimeo.com/video/304985143?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=0" frameborder="0"  allow="autoplay"></iframe>
+</div>
 </div>
 
-<div class="notice" id="main">
-<div id="button0">X</div>
-<div id="large">AS OF NOV 18, 2017... THIS SITE IS LONGER UPDATED. </div>
-	</div>
-
-<div class="notice" id="prc">
-<div id="button00">X</div>
-<div id="large">IN CELEBRATION OF PEOPLE'S REPUBLIC OF CHINA'S 70TH BIRTHDAY, THE SITE WILL SHUT DOWN ON OCT 1ST, 2019, 10:00AM (UTC+8)</div>
-	</div>
-
-<div class="notice" id="timer">
-<div id="button000">X</div>
+<div class="notice timer">
+<div id="button">X</div>
 <div class="countdown" id="large">THE SITE WILL SHUT DOWN IN APPROXIMATELY</div>
-	</div>
-
-
-
-	<div class="notice mobile" id="mobile1">
-<div id="button1">X</div>
-<div id="large">THE CURRENT DEVELOPMENT OF THE SITE IS THEREFORE NOT ADAPTED FOR MOBILE</div>
-	</div>
-
-		<div class="notice mobile" id="mobile2">
-<div id="button2">X</div>
-<div id="large">OUR APOLOGIES FOR YOUR INCONVENIENCE...PLEASE VIEW IT ON A DESKTOP OR A TABLET</div></div>
-
-		<div class="notice mobile" id="mobile3">
-<div id="button3">X</div>
-<div id="large"><i>ZHONGGUO SOUVENIRS</i> TEAM</div>
-	</div>
-
-
 </div>
+
+
+
 </body>
 </html>
 

@@ -27,15 +27,14 @@ body{
 .video-wrapper{
    		position: relative;
 		padding-bottom: 56.25%; /* 16:9 */
-		max-width:80%;
-		left:50%;
 }
 
 .video-wrapper iframe{
   	   position: absolute;
 		top: -10%;
-		transform: translateX(-50%);
-		width: 100%;
+		left: 0; bottom: 0; right: 0;
+		margin: auto;
+		width: 80%;
 		height: 100%;
 		padding:0;
 }
@@ -89,8 +88,6 @@ body{
 	cursor:pointer;
 	z-index: 2;
 }
-
-
 
 
 @media (orientation : portrait) and (max-width: 550px) {

@@ -2,6 +2,7 @@ var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userA
 
 var mainMargin;
 
+
  $(document).ready(function() {
 mainMargin = $('.notice').height();
 $(".main-container").css({"margin": mainMargin + " auto"});
@@ -17,6 +18,8 @@ if(isMobile==false){
 
 
 countdownTimer();
+
+
 
  });
 

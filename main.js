@@ -4,6 +4,17 @@ var mainMargin;
 
 
  $(document).ready(function() {
+$('#lightSlider').lightSlider({
+    slideMargin: 0,
+    thumbItem: 4,
+});
+
+$('#lightSlider2').lightSlider({
+    gallery:true,
+    slideMargin: 0,
+    thumbItem: 4,
+});
+
 mainMargin = $('.notice').height();
 $(".main-container").css({"margin": mainMargin + " auto"});
 
@@ -15,7 +26,11 @@ if(isMobile==false){
           $(".video-wrapper").remove();
     }
 
+$( "#button" ).click(function() {
+  $("#main").remove();
+  $(".main-container").css({"margin": "5px"});
 
+});
 
 countdownTimer();
 
@@ -25,8 +40,12 @@ countdownTimer();
 
 
 $(window).resize(function(){
-mainMargin = $('.notice').height();
+  if($('#main').length){
+mainMargin = $('#main').height();
 $(".main-container").css({"margin": mainMargin + " auto"});
+}else{
+  $(".main-container").css({"margin": "5px"});
+}
 
 })
 

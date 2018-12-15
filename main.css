@@ -3,7 +3,7 @@
 }
 
 html { 
-  background: url(img/blur_landscape.png) no-repeat fixed; 
+  background: url(img/blur_landscape.png) no-repeat; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -65,7 +65,7 @@ td{
 	font-weight:bold;
 }
 
-a:hover{
+.menu:hover{
 	cursor:pointer;
 	-webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
     filter: blur(2px);

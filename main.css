@@ -204,7 +204,7 @@ h2 span{
 .slide-1{
     height:100px;
     width:700px;
-    margin:10px 5%;
+    margin:15px 5%;
 }
 
 .slide-2{
@@ -232,12 +232,73 @@ li {
 	height:500px;
 	margin-top:10%;
 }
-#beijing{
 
+.shop-button {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size:20px;
 }
 
+.shop-button-all{
+	position:relative;
+	left:-10%;
+}
 
+.styled-select{
+   background: white;
+   width: 200px;
+   height: 34px;
+   font-size: 16px;
+   border: 2px solid black;
+   height: 34px;
+   overflow: hidden;
+}
 
+/*care*/
+.care-container{
+	position:relative;
+	overflow:hidden;
+}
+
+.care-img{
+	position:absolute;
+	display:inline-block;
+}
+.care-img-fail{
+	position:absolute;
+	display:inline-block;
+	top:10;
+	left:45%;
+	z-index:100;
+}
+
+.absolute-about{
+	position:absolute;
+}
+
+/*stories*/
+/*wall*/
+
+.top{
+	width:8%;
+	bottom:25%;
+	right:5%;
+}
+
+.top:hover{
+	cursor: pointer;
+}
+
+.top a{
+	
+}
 @media (orientation : portrait) and (max-width: 550px) {
 
 	#mobile-bg{

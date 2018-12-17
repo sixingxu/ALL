@@ -34,9 +34,20 @@ $( "#button" ).click(function() {
 
 countdownTimer();
 
+      if( $("video:in viewport").prop('muted') ){
+        $('video:in viewport').prop('muted', false);
+      }
 
-
- });
+$(window).scroll(function(){
+    if ($(window).scrollTop() === 100) {
+      if( $("video").prop('muted') ){
+        $('video').prop('muted', false);
+      }
+        console.log("unmute")
+    } else {
+        $('video').prop('muted', true);
+    }
+});
 
 
 $(window).resize(function(){

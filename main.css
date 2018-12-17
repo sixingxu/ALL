@@ -284,6 +284,15 @@ li {
 }
 
 /*stories*/
+.story-container{
+	position:relative;
+	overflow:hidden;
+}
+
+.story-img{
+	position:absolute;
+	display:inline-block;
+}
 /*wall*/
 
 .top{
@@ -297,7 +306,7 @@ li {
 }
 
 .top a{
-	
+
 }
 @media (orientation : portrait) and (max-width: 550px) {
 

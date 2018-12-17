@@ -28,6 +28,10 @@ body{
 	overflow:hidden;
 }
 
+#main{
+	top:0;
+}
+
 a:link {
 	color:white;
 	-webkit-text-stroke: 1.1px black;

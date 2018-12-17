@@ -364,4 +364,8 @@ li {
 	display:inline-block;
 
 	}
+
+	.vid-pause{
+		display:none;
+	}
 }

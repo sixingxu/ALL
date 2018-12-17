@@ -160,6 +160,7 @@ td{
 
 .content{
 	overflow:hidden;
+	display:block;
 }
 
 .spacer{
@@ -309,9 +310,17 @@ li {
 	cursor: pointer;
 }
 
-.top a{
-
+.vid-pause{
+	text-align: center;
+	overflow:hidden;
+	left:0;
+	top:0;
+	margin:auto;
 }
+
+
+
+
 @media (orientation : portrait) and (max-width: 550px) {
 
 	#mobile-bg{

@@ -1,7 +1,7 @@
 # ALL
 # ALL
 # ALL
-# THAI
+# THAT
 # IS
 # LEFT
 # IS

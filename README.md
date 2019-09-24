@@ -1,14 +1,3 @@
-# ALL
-# ALL
-# ALL
-# THAI
-# IS
-# LEFT
-# IS
-# GHOST
-# GHOST
-# GHOST
-# GHOST
 
 
 
